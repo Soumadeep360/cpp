@@ -1,0 +1,4 @@
+set:-
+1. upper/lower bound:
+auto it=upper_bound(mySet.begin(), mySet.end(), targetValue);
+int IndexOfUpperBound=distance(mySet.begin(), it);
