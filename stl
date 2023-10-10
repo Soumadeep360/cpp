@@ -2,3 +2,11 @@ set:-
 1. upper/lower bound:
 auto it=upper_bound(mySet.begin(), mySet.end(), targetValue);
 int IndexOfUpperBound=distance(mySet.begin(), it);
+
+2.binary search
+//vector
+int lb=lower_bound(nums.begin(),nums.end(),target)-nums.begin();
+int ub=upper_bound(nums.begin(),nums.end(),target)-nums.begin();
+//array
+int lb=lower_bound(nums,nums+n,target)-nums;
+int ub=upper_bound(nums,nums+n,target)-nums;
