@@ -1,5 +1,6 @@
-set:-
-1. upper/lower bound:
+
+upper/lower bound:
+1.set:-
 auto it=upper_bound(mySet.begin(), mySet.end(), targetValue);
 int IndexOfUpperBound=distance(mySet.begin(), it);
 
@@ -10,3 +11,12 @@ int ub=upper_bound(nums.begin(),nums.end(),target)-nums.begin();
 //array
 int lb=lower_bound(nums,nums+n,target)-nums;
 int ub=upper_bound(nums,nums+n,target)-nums;
+
+int to string:
+string str=to_string(num);
+string to int:
+int num=stoi(str);
+string to long long int:
+long long int num=stoll(str);
+
+
