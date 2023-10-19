@@ -29,3 +29,11 @@ bool cmp(const string str1, const string str2) {
    return str1.length() < str2.length();
 }
 sort(str.begin(), str.end(), cmp);
+
+# Remove elements from Vector:
+v.pop_back()//remove last
+
+v.erase(v.begin()+4);  //erase the 5th element 
+v.erase(v.begin(),v.begin()+3); //erase first 3 elements 
+
+v.clear() //all clear
