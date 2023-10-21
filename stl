@@ -37,3 +37,7 @@ v.erase(v.begin()+4);  //erase the 5th element
 v.erase(v.begin(),v.begin()+3); //erase first 3 elements 
 
 v.clear() //all clear
+
+# Min and Max element of a vector:
+*max_element(nums.begin(),nums.end());
+*min_element(nums.begin(),nums.end());
