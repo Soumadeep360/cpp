@@ -41,3 +41,6 @@ v.clear() //all clear
 # Min and Max element of a vector:
 *max_element(nums.begin(),nums.end());
 *min_element(nums.begin(),nums.end());
+
+sum of vector:
+int sum=accumulate(nums.begin(),nums.end(),0); // 0 is initial value.
