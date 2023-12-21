@@ -44,3 +44,8 @@ v.clear() //all clear
 
 sum of vector:
 int sum=accumulate(nums.begin(),nums.end(),0); // 0 is initial value.
+
+ // Sort the entire 2D vector based on the first element of each row
+    sort(myVector.begin(), myVector.end(), [](const auto& a, const auto& b) {
+        return a[0] < b[0];
+    });
