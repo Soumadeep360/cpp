@@ -49,3 +49,16 @@ int sum=accumulate(nums.begin(),nums.end(),0); // 0 is initial value.
     sort(myVector.begin(), myVector.end(), [](const auto& a, const auto& b) {
         return a[0] < b[0];
     });
+
+#Unorderd_Sets to use pair we need to include pairhash:-
+struct pair_hash {
+    template <class T1, class T2>
+    std::size_t operator () (const std::pair<T1, T2>& p) const {
+        auto h1 = std::hash<T1>{}(p.first);
+        auto h2 = std::hash<T2>{}(p.second);
+
+        // Simple hash function combining two hash values
+        return h1 ^ h2;  
+    }
+};
+ unordered_set<pair<int,int>,pair_hash> st;
